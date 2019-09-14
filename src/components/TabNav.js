@@ -1,15 +1,23 @@
 import React from "react";
-import { Tab, Menu, Icon } from "semantic-ui-react";
-import { NavLink } from "react-router-dom";
+import LocationsList from './LocationsList.js';
+import WelcomePage from './WelcomePage.js';
+import CharacterList from './CharacterList.js';
+import EpisodeList from './EpisodeList.js';
+import { Tab } from "semantic-ui-react";
+// import { NavLink } from "react-router-dom";
 
-// TODO: Add missing menu/tabs/nav below
-
-// Review Semantic UI Component options for nav-like UI:
-// https://react.semantic-ui.com/collections/menu/
+// TODO: Add missing tabs below
+// Take a look at React Semantic UI tabs 
 // https://react.semantic-ui.com/modules/tab/
-// https://react.semantic-ui.com/elements/button/
-// https://react.semantic-ui.com/collections/breadcrumb/
 
-export default function TabNav() {
+    const panes = [
+        {menuItem: 'Home', render: () => <WelcomePage  attached={false}  />},
+        {menuItem: 'Locations', render: () => <LocationsList  attached={false} />},
+        {menuItem: 'Characters', render: () => <CharacterList  attached={false} />},
+        {menuItem: 'Episodes', render: () => <EpisodeList  attached={false} />},
 
-};
+    ]
+
+    const TabNav = () => <Tab menu={{ pointing: true }} panes={panes} />
+
+   export default TabNav
