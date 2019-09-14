@@ -35,7 +35,10 @@ function CharacterDetails({character}){
       <Card.Content>
         <Image src={character.image} alt='character-pic' />
         <Card.Header>{character.name}</Card.Header>
+        <Card.Description>
         <h3>Status: {character.status}</h3>
+        </Card.Description>
+        
       </Card.Content>
     </Card>
   );

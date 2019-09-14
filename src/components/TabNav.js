@@ -3,7 +3,7 @@ import LocationsList from './LocationsList.js';
 import WelcomePage from './WelcomePage.js';
 import CharacterList from './CharacterList.js';
 import EpisodeList from './EpisodeList.js';
-import { Tab, Icon } from "semantic-ui-react";
+import { Tab } from "semantic-ui-react";
 // import { NavLink } from "react-router-dom";
 
 // TODO: Add missing tabs below
