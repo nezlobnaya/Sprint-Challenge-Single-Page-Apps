@@ -34,7 +34,8 @@ function LocationDetails({location}){
     return(
         <Card className='location-card'>
             <h1>{location.name}</h1>
-            <p>{location.type}</p>
+            <p>{location.type}, {location.dimension}</p>
+            <p>Residents:{location.residents.length}</p>
         </Card>
     );
 }

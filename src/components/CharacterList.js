@@ -34,11 +34,11 @@ function CharacterDetails({character}){
     <Card className='char-card'>
       <Card.Content>
         <Image src={character.image} alt='character-pic' />
-        <Card.Header>{character.name}</Card.Header>
-        <Card.Description>
+        <Card.Header>{character.name}, {character.gender}, {character.species}</Card.Header>
         <h3>Status: {character.status}</h3>
-        </Card.Description>
-        
+        <h3>Episodes: {character.episode.length}</h3>
+        <h3>Location: {character.location.name}</h3>
+        <h3>Origin: {character.origin.name}</h3>
       </Card.Content>
     </Card>
   );
